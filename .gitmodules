@@ -1,0 +1,10 @@
+[submodule "st2-docker"]
+	path = st2-docker
+    url = git@github.com:matrulda/st2-docker.git
+    branch = test_case_workflow_engine
+[submodule "checkQC"]
+	path = checkQC
+	url = https://github.com/Molmed/checkQC
+[submodule "arteria"]
+	path = arteria
+	url = https://github.com/arteria-project/arteria

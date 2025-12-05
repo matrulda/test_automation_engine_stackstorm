@@ -1,0 +1,8 @@
+#!/bin/bash
+set -o errexit
+set -o xtrace
+
+cd st2-docker
+docker compose down
+
+cd ..

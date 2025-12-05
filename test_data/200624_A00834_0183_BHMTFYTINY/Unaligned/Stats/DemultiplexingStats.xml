@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Stats>
+  <Flowcell flowcell-id="HMTFYDRXX">
+    <Project name="default">
+      <Sample name="Undetermined">
+        <Barcode name="unknown">
+          <Lane number="1">
+            <BarcodeCount>3395786</BarcodeCount>
+            <PerfectBarcodeCount>3395786</PerfectBarcodeCount>
+          </Lane>
+          <Lane number="2">
+            <BarcodeCount>3448045</BarcodeCount>
+            <PerfectBarcodeCount>3448045</PerfectBarcodeCount>
+          </Lane>
+        </Barcode>
+        <Barcode name="all">
+          <Lane number="1">
+            <BarcodeCount>3395786</BarcodeCount>
+            <PerfectBarcodeCount>3395786</PerfectBarcodeCount>
+          </Lane>
+          <Lane number="2">
+            <BarcodeCount>3448045</BarcodeCount>
+            <PerfectBarcodeCount>3448045</PerfectBarcodeCount>
+          </Lane>
+        </Barcode>
+      </Sample>
+      <Sample name="all">
+        <Barcode name="all">
+          <Lane number="1">
+            <BarcodeCount>3395786</BarcodeCount>
+            <PerfectBarcodeCount>3395786</PerfectBarcodeCount>
+          </Lane>
+          <Lane number="2">
+            <BarcodeCount>3448045</BarcodeCount>
+            <PerfectBarcodeCount>3448045</PerfectBarcodeCount>
+          </Lane>
+        </Barcode>
+      </Sample>
+    </Project>
+    <Project name="AB-1234">
+      <Sample name="14574-Qiagen-IndexSet1-SP-Lane1">
+        <Barcode name="GAACTGAGCG+TCGTGGAGCG">
+          <Lane number="1">
+            <BarcodeCount>9920</BarcodeCount>
+            <PerfectBarcodeCount>9718</PerfectBarcodeCount>
+            <OneMismatchBarcodeCount>202</OneMismatchBarcodeCount>
+          </Lane>
+        </Barcode>
+        <Barcode name="all">
+          <Lane number="1">
+            <BarcodeCount>9920</BarcodeCount>
+            <PerfectBarcodeCount>9718</PerfectBarcodeCount>
+            <OneMismatchBarcodeCount>202</OneMismatchBarcodeCount>
+          </Lane>
+        </Barcode>
+      </Sample>
+      <Sample name="all">
+        <Barcode name="all">
+          <Lane number="1">
+            <BarcodeCount>9920</BarcodeCount>
+            <PerfectBarcodeCount>9718</PerfectBarcodeCount>
+            <OneMismatchBarcodeCount>202</OneMismatchBarcodeCount>
+          </Lane>
+          <Lane number="2">
+            <BarcodeCount>10208</BarcodeCount>
+            <PerfectBarcodeCount>10024</PerfectBarcodeCount>
+            <OneMismatchBarcodeCount>184</OneMismatchBarcodeCount>
+          </Lane>
+        </Barcode>
+      </Sample>
+      <Sample name="14574-Qiagen-IndexSet1-SP-Lane2">
+        <Barcode name="GAACTGAGCG+TCGTGGAGCG">
+          <Lane number="2">
+            <BarcodeCount>10208</BarcodeCount>
+            <PerfectBarcodeCount>10024</PerfectBarcodeCount>
+            <OneMismatchBarcodeCount>184</OneMismatchBarcodeCount>
+          </Lane>
+        </Barcode>
+        <Barcode name="all">
+          <Lane number="2">
+            <BarcodeCount>10208</BarcodeCount>
+            <PerfectBarcodeCount>10024</PerfectBarcodeCount>
+            <OneMismatchBarcodeCount>184</OneMismatchBarcodeCount>
+          </Lane>
+        </Barcode>
+      </Sample>
+    </Project>
+    <Project name="all">
+      <Sample name="all">
+        <Barcode name="all">
+          <Lane number="1">
+            <BarcodeCount>3405706</BarcodeCount>
+            <PerfectBarcodeCount>3405504</PerfectBarcodeCount>
+            <OneMismatchBarcodeCount>202</OneMismatchBarcodeCount>
+          </Lane>
+          <Lane number="2">
+            <BarcodeCount>3458253</BarcodeCount>
+            <PerfectBarcodeCount>3458069</PerfectBarcodeCount>
+            <OneMismatchBarcodeCount>184</OneMismatchBarcodeCount>
+          </Lane>
+        </Barcode>
+      </Sample>
+    </Project>
+  </Flowcell>
+</Stats>

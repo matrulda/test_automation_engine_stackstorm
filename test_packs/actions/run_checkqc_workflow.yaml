@@ -1,0 +1,29 @@
+
+---
+name: run_checkqc_workflow
+runner_type: orquesta
+description: Sends a qc request to the checkqc web service and returns the result
+enabled: true
+entry_point: workflows/run_checkqc_workflow.yaml
+pack: test_packs
+parameters:
+  base_url:
+    type: string
+    description: URL for the request
+    default: http://host.docker.internal
+  runfolder_path:
+    type: string
+    description: Path to the runfolder to analyse
+    required: true
+  runfolder_name:
+    type: string
+    description: Name of the runfolder
+    required: true
+  long_process1:
+    type: integer
+    description: Sleep time for long_process1
+    default: 5
+  long_process2:
+    type: integer
+    description: Sleep time for long_process2
+    default: 5

@@ -1,0 +1,59 @@
+---
+
+version: 1.0
+name: test_packs.run_checkqc_workflow
+description: Run CheckQC for runfolder + other tasks
+
+input:
+  - base_url
+  - runfolder_path
+  - runfolder_name
+  - long_process1
+  - long_process2
+
+tasks:
+
+  mark_as_started:
+    action: core.http
+    input:
+      url: <% ctx().base_url %>:9991/api/1.0/runfolders/path<% ctx().runfolder_path %>
+      body: '{"state": "started"}'
+      method: "POST"
+    next:
+      - when: <% succeeded() %>
+        do:
+          - run_checkqc
+          - long_process1
+
+  run_checkqc:
+    action: core.http
+    input:
+      url: <% ctx().base_url %>:9992/qc/<% ctx().runfolder_name %>?useClosestReadLength
+    next:
+      - when: <% succeeded() %>
+        do:
+          - long_process2
+
+  long_process1:
+    action: core.local
+    input:
+      cmd: sleep <% ctx().long_process1 %>
+      timeout: <% ctx().long_process1 %>
+    next:
+      - when: <% succeeded() %>
+        do:
+        - done_barrier
+
+  long_process2:
+    action: core.local
+    input:
+      cmd: sleep <% ctx().long_process2 %>
+      timeout: <% ctx().long_process2 %>
+    next:
+      - when: <% succeeded() %>
+        do:
+        - done_barrier
+
+  done_barrier:
+    action: core.noop
+    join: 2

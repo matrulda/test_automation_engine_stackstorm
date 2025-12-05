@@ -1,0 +1,11 @@
+---
+name: "start_checkqc_for_runfolder"
+description: "Run CheckQC when runfolder is ready"
+enabled: true
+trigger:
+    type: "test_packs.runfolder_ready"
+action:
+    ref: "snpseq_packs.run_checkqc_workflow"
+    parameters:
+        runfolder_path: "{{trigger.runfolder}}"
+        runfolder_name: "{{trigger.runfolder_name}}"

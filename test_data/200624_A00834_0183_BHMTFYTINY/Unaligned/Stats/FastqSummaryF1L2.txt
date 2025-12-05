@@ -1,0 +1,3 @@
+SampleNumber	Tile	NumberOfReadsRaw	NumberOfReadsPF
+0	2101	4081696	3448045
+2	2101	10208	10208

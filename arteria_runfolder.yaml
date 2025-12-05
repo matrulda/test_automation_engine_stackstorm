@@ -1,0 +1,6 @@
+---
+monitored_directories:
+  - "/home/matilda/workspace/test_automation_engine_stackstorm/test_data"
+port: 9991
+logger_config_file: "/home/matilda/workspace/test_automation_engine_stackstorm/arteria_runfolder_logger.yaml"
+completed_marker_grace_minutes: 2

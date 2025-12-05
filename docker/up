@@ -1,0 +1,16 @@
+#!/bin/bash
+set -o errexit
+set -o xtrace
+
+# Move to st2-docker directory
+cd st2-docker
+
+# Start st2-docker compose
+source .env
+docker compose up -d
+
+# Install test_packs
+./scripts/test_packs/startup.sh
+
+# Move back
+cd ..
